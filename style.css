@@ -1,0 +1,91 @@
+.header{
+    background-color: gray;
+    margin: 3px;
+    padding: 20px 10px;
+    border-top: 5px solid black;
+    border-bottom:5px solid black;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.logo{
+    text-align: left;
+    font-size: 30px;
+    color: black;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.title{
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    background-color: grey;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 25px;
+}
+.sub{
+    text-align: center;
+    font-weight: bold;
+}
+.lorem{
+    font-size: 24px;
+}
+
+.menu{
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    display: none;
+    
+}
+.bar{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 6px auto;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid gray;
+    height: 20px;
+    width: auto;
+    gap:10px
+}
+.chicken, .sushi, .beef{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    background-color: yellow;
+    height: 20px;
+    width: 70px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+   
+}
+.chicken:hover, .sushi:hover, .beef:hover{
+    background-color: coral;
+    transform: rotate3d(1, 1, 1, 45deg);
+
+}
+@media screen and (max-width:480px){
+    .content{
+        margin:0px 30px ;
+    }
+    .menu{
+        display:block;
+    }
+    .row{
+        display: none;
+    }
+}
